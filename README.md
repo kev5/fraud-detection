@@ -27,7 +27,7 @@ I use the Vincenty distance formula to calculate the distance between 2 IP addre
 
 Rest of the code is pretty straightforward has I go through the previous records file to find the closest IP by distance and return a score based on whether it was fraudulent or not.
 
-*Note: I'm comparing the first occurence of the closest IP in the records file. Uncomment line 74 for using the last occurence.*
+*Note: I'm comparing the first occurence of the closest IP in the records file. Uncomment line 74 for using the last occurence. Also, I didn't bother removing the access token here for ease of running the script*
 
 ## Try It Out
 
