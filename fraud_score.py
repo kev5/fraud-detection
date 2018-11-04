@@ -32,9 +32,9 @@ def main():
 	try:
 		curr_ip = sys.argv[1]
 		records = sys.argv[2]
-	except IndexError:
-		print("Please enter 2 arguments- IP address followed by a records.txt file.")
-		sys.exit.exit(0)
+	except (IndexError, FileNotFoundError):
+		print("Please enter 2 arguments- IP address followed by a valid and existing records.txt file.")
+		sys.exit(0)
 
 	# Getting coordinates of current IP
 	ans = get_results(curr_ip)
